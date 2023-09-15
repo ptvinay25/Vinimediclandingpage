@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vinimedic landingpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+*{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar {
+    overflow: hidden;
+    background: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+    position: fixed;
+    left: 3%;
+    right: 3%;
+    top: 10px;
+    
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 100%;
+    color: rgb(4, 41, 249);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    left: 20%;
+    
+  }
+  
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 100%;  
+    border: none;
+    outline: none;
+    color: rgb(4, 41, 249);
+    padding: 14px 10px;
+    background-color: inherit;
+    margin: 0;
+    
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    color: rgb(4, 41, 249);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    background: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .footer{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    padding: 2px;
+    color: #00c8ff;
+    background: linear-gradient(90.2deg, rgba(190, 70, 102, 0.93) -15.6%, rgb(252, 154, 154) -15.6%, rgba(190, 70, 102, 0.92) 17.9%, rgb(58, 13, 48) 81.6%);
+  }
+
+ .footlinks {
+  font-size: larger;
+
+ }
+
+ .footlinks a{
+  padding: 14px 16px 10px;
+  color: #f6f3ff;
+  bottom: 10px;
+ }
+
+ .med{
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: small;
+ }
+ 
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 16%;
+  padding: 0 10px;
+	box-sizing:border-box;
+  margin-bottom: 20px;
+  min-width: 150px;
+  font-size: 80%;
+  float:left;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  height: 100px;
+
+}
+
+.column p, h2, .column a{
+  display: none;
+
+}
+.column:hover{
+  color: #f1f1f1;
+}
+
+.column:hover p, .column:hover a{
+  color: tomato;
+  font-size: large;
+  margin-bottom: 50px;
+  display: block;
+}
+
+.column:hover h2{
+  color: tomato;
+  font-size: large;
+  margin-top: -20px;
+  display: block;
+}
+
+</style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home<i class="fa fa-home" aria-hidden="true"></i> </a>
+        <div class="dropdown">
+          <button class="dropbtn">Category
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="advice.html">Advice</a>
+            <a href="medicine.html">Medicine</a>
+            <a href="products.html">Products</a>
+          </div>
+        </div> 
+        <a href="location.html">Location<i class="fa fa-map-marker" aria-hidden="true"></i></a>
+    </div>
+    <div class="med">
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <h3>PARACETEMOL</h3>
+          <h2>Fever</h2>
+          <p><a href="advice.html">Click me 👆</a></p>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <h3>DOLOPAR</h3>
+          <h2>headache</h2>
+          <p><a href="advice.html">Click me 👆</a></p>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <h3>CYCLOPAM</h3>
+          <h2>Stomach pain</h2>
+          <p><a href="advice.html">Click me 👆</a></p>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <h3>DICLOFENAC</h3>
+          <h2>Pain killer</h2>
+          <p><a href="advice.html">Click me 👆</a></p>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <h3>LOPERAMIDE</h3>
+          <h2>Diarrhoea</h2>
+          <p><a href="advice.html">Click me 👆</a></p>
+        </div>
+      </div>
+
+    <div class="column">
+      <div class="card">
+        <h3>METFROMINE</h3>
+        <h2>Oral Hypoglycemic</h2>
+        <p><a href="advice.html">Click me 👆</a></p>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <h3>B COMPLEX</h3>
+        <h2>Body heat</h2>
+        <p><a href="advice.html">Click me 👆</a></p>
+      </div>
+    </div>
+  
+      <div class="column">
+        <div class="card">
+          <h3>ACELOFENAC</h3>
+          <h2>Pain killer</h2>
+          <p><a href="advice.html">Click me 👆</a></p>
+        </div>
+      </div>
+
+  
+    <!-- </div> -->
+      
+    <!-- <div class="row"> -->
+      <div class="column">
+        <div class="card">
+          <h3>ACELOC</h3>
+          <h2>Gastric</h2>
+          <p><a href="advice.html">Click me 👆</a></p>
+
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <h3>AVIL</h3>
+          <h2>Allergy</h2>
+          <p><a href="advice.html">Click me 👆</a></p>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <h3>DOLO 650</h3>
+          <h2>Fever</h2>
+          <p><a href="advice.html">Click me 👆</a></p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <h3>CEFIXIME</h3>
+          <h2>Antibiotic</h2>
+          <p><a href="advice.html">Click me 👆</a></p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <h3>CYSTONE</h3>
+          <h2>Kidney Stones</h2>
+          <p><a href="advice.html">Click me 👆</a></p>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <h3>PARACETEMOL</h3>
+          <h2>Fever</h2>
+          <p><a href="advice.html">Click me 👆</a></p>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <h3>DOLOPAR</h3>
+          <h2>headache</h2>
+          <p><a href="advice.html">Click me 👆</a></p>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <h3>CYCLOPAM</h3>
+          <h2>Stomach pain</h2>
+          <p><a href="advice.html">Click me 👆</a></p>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <h3>DICLOFENAC</h3>
+          <h2>Pain killer</h2>
+          <p><a href="advice.html">Click me 👆</a></p>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <h3>LOPERAMIDE</h3>
+          <h2>Diarrhoea</h2>
+          <p><a href="advice.html">Click me 👆</a></p>
+        </div>
+      </div>
+
+    <div class="column">
+      <div class="card">
+        <h3>METFROMINE</h3>
+        <h2>Oral Hypoglycemic</h2>
+        <p><a href="advice.html">Click me 👆</a></p>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <h3>B COMPLEX</h3>
+        <h2>Body heat</h2>
+        <p><a href="advice.html">Click me 👆</a></p>
+      </div>
+    </div>
+
+      <div class="column">
+        <div class="card">
+          <h3>AMOXICYLLIN SP</h3>
+          <h2>Antibiotic</h2>
+          <p><a href="advice.html">Click me 👆</a></p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <h3>MONTELUKAST LC</h3>
+          <h2>Sneezing</h2>
+          <p><a href="advice.html">Click me 👆</a></p>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <h3>PAN D</h3>
+          <h2>Acidity</h2>
+          <p><a href="advice.html">Click me 👆</a></p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <h3>TELMISARTAN HC</h3>
+          <h2>BP</h2>
+          <p><a href="advice.html">Click me 👆</a></p>
+        </div>
+      </div>
+
+    </div><!--closing class row-->
+    </div> <!--closing class med-->
+    <div class="footer">
+      <h2>copyright @ vini medic</h2>
+      <br>
+     <div class="footlinks">
+      <a href="index.html">Home</a>
+      <a href="advice.html">Advice</a>
+      <a href="medicine.html">Medicine</a>
+      <a href="products.html">Products</a>
+      <a href="location.html">Location</a>
+      <br><br>
+    </div><!--closing class footer-->
+  </div> <!--closing class footerlinks-->
+  
+</body>
+</html>

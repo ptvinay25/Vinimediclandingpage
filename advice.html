@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vinimedic landingpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+*{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+    .navbar {
+    overflow: hidden;
+    background: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+    position: fixed;
+    left: 3%;
+    right: 3%;
+    top: 10px;
+    
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 100%;
+    color: rgb(4, 41, 249);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    left: 20%;
+    
+  }
+  
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 100%;  
+    border: none;
+    outline: none;
+    color: rgb(4, 41, 249);
+    padding: 14px 10px;
+    background-color: inherit;
+    margin: 0;
+    
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    color: rgb(4, 41, 249);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    background: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .myDIV{
+    background-color: beige;
+    margin-bottom: 20px;
+    height: 25px;
+    padding: 20px;
+  }
+
+  .hide {
+        display: none;
+        }
+
+  .myDIV:hover + .hide {
+    display: block;
+    color: brown;
+    background: radial-gradient(circle at 3.1% 8.2%, rgb(248, 250, 107) 0%, rgb(238, 148, 148) 98.2%);
+    padding: 5px;
+    position: absolute;
+    margin-bottom: 30px;
+ }
+
+ .myDIV:hover{
+    background: radial-gradient(circle at 10% 20%, rgb(151, 10, 130) 0%, rgb(33, 33, 33) 100.2%);
+    color: antiquewhite;
+ }
+
+ .adv{
+    margin-top: 90px;
+ }
+
+ .footer{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    padding: 2px;
+    color: #00c8ff;
+    background: linear-gradient(90.2deg, rgba(190, 70, 102, 0.93) -15.6%, rgb(252, 154, 154) -15.6%, rgba(190, 70, 102, 0.92) 17.9%, rgb(58, 13, 48) 81.6%);
+  }
+
+ .footlinks {
+  font-size: larger;
+
+ }
+
+ .footlinks a{
+  padding: 14px 16px 10px;
+  color: #f6f3ff;
+  bottom: 10px;
+ }
+</style>
+</head>
+<body>
+    
+    <div class="navbar">
+        <a href="index.html">Home<i class="fa fa-home" aria-hidden="true"></i> </a>
+        <div class="dropdown">
+          <button class="dropbtn">Category
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="advice.html">Advice</a>
+            <a href="medicine.html">Medicine</a>
+            <a href="products.html">Products</a>
+          </div>
+        </div> 
+        <a href="location.html">Location<i class="fa fa-map-marker" aria-hidden="true"></i></a>
+    </div>
+<div class="adv">
+    <div class="myDIV">FEVER</div>
+    <div class="hide">
+        <ul>
+            <li>Take a complete bed rest.</li>
+            <li>Don't cover your body with blanket otherwise, temperature will increase.</li>
+            <li>If you can't able to bear the cold. make sure you need to be in warm condition.</li>
+            <li>Take paracetemol 500mg tablet.</li>
+            <li>If the fever is not cure within a day visit our clinic or nearest clinic.</li>
+        </ul>
+    </div>
+    <div class="myDIV">COLD</div>
+    <div class="hide">
+        <ul>
+            <li>Take a complete bed rest.</li>
+            <li>Drink hot wter.</li>
+            <li>Your body should be in warm condition.</li>
+            <li>Take leavocetrizen tablet.</li>
+            <li>If the cold is not cure within a day visit our clinic or nearest clinic.</li>
+        </ul>
+    </div>
+    <div class="myDIV">COUGH</div>
+    <div class="hide">
+        <ul>
+            <li>Take a complete bed rest.</li>
+            <li>Rinse your mouth with warm salt water</li>
+            <li>Eat 2-3 pepper, garlic cloves and crystalsalt.</li>
+            <li>Take cough-D tablet.</li>
+            <li>If the cough is not cure within a day visit our clinic or nearest clinic.</li>
+        </ul>
+    </div>
+    <div class="myDIV">HEAD ACHE</div>
+    <div class="hide">
+        <ul>
+            <li>Take a complete bed rest.</li>
+            <li>Wash your face with cold water.</li>
+            <li>Don't watch tv or mobile other devices for long time.</li>
+            <li>Take dolopar tablet.</li>
+            <li>If the head ache is not cure within a day visit our clinic or nearest clinic.</li>
+        </ul>
+    </div>
+    <div class="myDIV">DIZZINESS</div>
+    <div class="hide">
+        <ul>
+            <li>Take a complete bed rest.</li>
+            <li>Don't walk or run until you feel normal.</li>
+            <li>Eat little bit sugar content items.</li>
+            <li>Drink ORS</li>
+            <li>If the dizziness is not cure within a day visit our clinic or nearest clinic.</li>
+        </ul>
+    </div>
+    <div class="myDIV">EYES BURN / PAIN</div>
+    <div class="hide">
+        <ul>
+            <li>Take a complete bed rest.</li>
+            <li>Don't watch tv or mobile other devices for long time.</li>
+            <li>Apply coconut oil to your head and do massage for 6-7 minutes</li>
+            <li>Drink coconut water.</li>
+            <li>If the eyes burn is not cure within a day visit our clinic or nearest clinic.</li>
+        </ul>
+    </div>
+    <div class="myDIV">NECK PAIN</div>
+    <div class="hide">
+        <ul>
+            <li>Take a complete bed rest.</li>
+            <li>Do some neck pain relief exercises.</li>
+            <li>Sleep without pillow</li>
+            <li>Don't do any kinds of massage.</li>
+            <li>If the neck pain is not cure within a day visit our clinic or nearest clinic.</li>
+        </ul>
+    </div>
+    <div class="myDIV">STOMACH PAIN</div>
+    <div class="hide">
+        <ul>
+            <li>Take a complete bed rest.</li>
+            <li>Eat curd rice.</li>
+            <li>Don't lift more weight.</li>
+            <li>Take cyclopam tablet.</li>
+            <li>If the stomach pain is not cure within a day visit our clinic or nearest clinic.</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <h2>copyright @ vini medic</h2>
+        <br>
+       <div class="footlinks">
+        <a href="index.html">Home</a>
+        <a href="advice.html">Advice</a>
+        <a href="medicine.html">Medicine</a>
+        <a href="products.html">Products</a>
+        <a href="location.html">Location</a>
+        <br><br>
+      </div><!--closing class footer-->
+    </div> <!--closing class footerlinks-->
+</div>
+</body>
+</html>
